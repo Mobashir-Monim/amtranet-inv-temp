@@ -1,0 +1,417 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+<style type="text/css" media="all">
+
+#lineItem tr {
+	page-break-inside: avoid;
+	page-break-after: auto;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+caption {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.full-border {
+	border: 1px solid black;
+}
+
+.border-right {
+	border-right: 1px solid black;
+}
+
+.border-bottom {
+	border-bottom: 1px solid black;
+}
+
+.border-top {
+	border-top: 1px solid black;
+}
+
+.no-border-top {
+	border-top: none;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+@media print {
+	.article {
+		page-break-after: always;
+	}
+	body {
+		transform: scale(1);
+	}
+	table {
+		page-break-inside: avoid;
+	}
+}
+
+</style>
+<div class="article">
+   <table style="width:100%">
+      <caption>INVOICE</caption>
+      <tbody>
+         <tr>
+            <td class="border-right w-50"><u>SHIPPER/EXPORTER</u></td>
+            <td>INVOICE NO.</td>
+            <td>%InvoiceNumber%</td>
+            <td>DATE:</td>
+            <td>%InvoiceDate%</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">Garments Export Village Ltd.</td>
+            <td>EXP NO.</td>
+            <td>${invoice.cf_exp_no}</td>
+            <td>DATE:</td>
+            <td>${invoice.cf_exp_date}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">K. B. M. Road, Tongi Industrial Area<br></td>
+            <td>CONT NO.</td>
+            <td>${invoice.cf_cont_no}</td>
+            <td>DATE:</td>
+            <td>${invoice.cf_cont_date}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">TONGI,GAZIPUR, BANGLADESH</td>
+            <td>VAT NO.</td>
+            <td>000328954-0403</td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"></td>
+            <td>ERC NO.</td>
+            <td>RA-77751</td>
+            <td></td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width:100%" class="no-border-top">
+      <tbody>
+         <tr>
+            <td class="border-right w-50"><u>MANUFACTURER</u></td>
+            <td><u>BUYER'S BANK: National Westminster Bank</u></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">GARMENTS EXPORT VILLAGE LTD.</td>
+            <td>City of London Office , C/O Chatham Customer Service Centre ,Waterside Court</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">K.B.M. ROAD,TONGI INDUSTRIAL AREA</td>
+            <td>Chatham Maritime</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">TONGI,GAZIPUR, BANGLADESH</td>
+            <td>Chatham</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"></td>
+            <td>Kent , ME4 4RT</td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width:100%" class="no-border-top">
+      <tbody>
+         <tr>
+            <td class="border-right w-50"><u>APPLICANT/BUYER:</u></td>
+            <td colspan="3"><u>NEGOTIATING BANK :</u></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">DEBENHAMS RETAIL LTD.</td>
+            <td colspan="3">Export Import Bank of Bangladesh Ltd</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">10 BROCK STREET</td>
+            <td colspan="3">Delta Life Tower Plot no# 37, Road No: 45 &amp; 90</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">REGENTS PLACE LONDON</td>
+            <td colspan="3">Gulshan North C/A Dhaka, Bangladesh, 1212</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">NW1 3FG</td>
+            <td colspan="3">Swift# EXBKBDDO0007</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">TEL: 020 7408 4444</td>
+            <td colspan="3">A/C NO: 11100040224</td>
+         </tr>
+         <tr>
+            <td class="border-right border-top w-50"><u>Consignee:</u></td>
+            <td colspan="3" class="border-bottom"></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">DEBENHAMS RETAIL LTD.</td>
+            <td>COUNTRY OF ORIGIN</td>
+            <td>:</td>
+            <td>BANGLADESH </td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">334-348 OXFORD STREET</td>
+            <td>PORT OF LOADING</td>
+            <td>:</td>
+            <td>CHITTAGONG, BANGLADESH </td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">LONDON, W1C 1JC</td>
+            <td>PORT OF DICHARGE</td>
+            <td>:</td>
+            <td>LONDON GATEWAY </td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">UNITED KINGDOM</td>
+            <td>FINAL DESTINATION</td>
+            <td>:</td>
+            <td>${invoice.cf_final_destination}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"><u>NOTIFY PARTY:</u></td>
+            <td>TERMS OF DELIVERY</td>
+            <td>:</td>
+            <td>${invoice.cf_terms_of_delivery}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">DEBENHAMS RETAIL LTD.</td>
+            <td>MODE OF SHIPMENT</td>
+            <td>:</td>
+            <td>${invoice.cf_mode_of_shipment}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">334-348 OXFORD STREET</td>
+            <td>DC NAME &amp; NO.</td>
+            <td>:</td>
+            <td>${invoice.cf_dc_name_no}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">LONDON, W1C 1JC</td>
+            <td>SUPPLIER NO.</td>
+            <td>:</td>
+            <td>${invoice.cf_supplier_name}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">UNITED KINGDOM</td>
+            <td>B/L NO</td>
+            <td>:</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"></td>
+            <td>DATE</td>
+            <td>:</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"><u>2ND NOTIFY PARTY:</u></td>
+            <td>CAT</td>
+            <td>:</td>
+            <td>${invoice.cf_cat}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">OOCL LOGISTICS (EUROPE) LTD</td>
+            <td>HS CODE</td>
+            <td>:</td>
+            <td>${invoice.cf_hs_code}</td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">ON BEHALF OF DEBENHAMS RETAIL LTD- BRIDGE ROAD, </td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">LEVINGTON, SUFFOLK IP10 0NE, UNITED KINGDOM.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">PIC: KIERAN HILLS TEL: +44 (0) 1473 654408 </td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50">EMAIL: KIERAN.HILLS@OOCLLOGISTICS.COM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td class="border-right w-50"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width:100%" class="no-border-top">
+      <thead class="center">
+         <tr>
+            <td class="border-right border-bottom">DEPT.</td>
+            <td class="border-right border-bottom">ORDER NO.</td>
+            <td class="border-right border-bottom">DEB NO.</td>
+            <td class="border-right border-bottom">STYLE NO.</td>
+            <td class="border-right border-bottom">COLOUR</td>
+            <td class="border-right border-bottom">DESCRIPTION OF GOODS</td>
+            <td class="border-right border-bottom">QUANTITY (PCS)</td>
+            <td class="border-right border-bottom">U/PRICE USD/PC</td>
+            <td class="border-right border-bottom">AMOUNT</td>
+         </tr>
+      </thead>
+      <tbody id="lineitem">
+         <tr>
+            <td class="border-right border-bottom">${INVOICE.Item.CF.Dept.Value}</td>
+            <td class="border-right border-bottom">${INVOICE.Item.CF.Order No.Value}</td>
+            <td class="border-right border-bottom">${INVOICE.Item.CF.Deb No.Value}</td>
+            <td class="border-right border-bottom">${INVOICE.Item.CF.Style No.Value}</td>
+            <td class="border-right border-bottom">${INVOICE.Item.CF.Colour.Value}</td>
+            <td class="border-right border-bottom">%ItemName%&nbsp;%ItemDescription%</td>
+            <td class="border-right border-bottom">%ItemQty%</td>
+            <td class="border-right border-bottom">%ItemRate%</td>
+            <td class="border-right border-bottom">%ItemAmount%</td>
+         </tr>
+      </tbody>
+      <tbody>
+         <tr>
+            <td colspan="6" class="border-right border-bottom"><b>TOTAL</b></td>
+            <td class="border-right border-bottom">%QtyCount%<b>&nbsp;PCS</b></td>
+            <td class="border-right border-bottom"></td>
+            <td class="border-right border-bottom"><b>%InvoiceSubTotal%</b></td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width:100%" class="no-border-top">
+      <tbody>
+         <tr>
+            <td>&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width:100%" class="no-border-top">
+      <tbody>
+         <tr>
+            <td class="border-right" colspan="2">&nbsp;</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL CBM:</td>
+            <td class="border-right">${invoice.cf_total_cbm}&nbsp;CBM</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL NET WEIGHT: </td>
+            <td class="border-right">${invoice.cf_total_net_weight_in_kgs}&nbsp;KGS</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL GROSS WT: </td>
+            <td class="border-right">${invoice.cf_total_gross_weight_in_kgs}&nbsp;KGS</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL PCS: </td>
+            <td class="border-right">${invoice.cf_total_pcs_in_pcs}&nbsp;PCS</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL CTN: </td>
+            <td class="border-right">${invoice.cf_total_ctn_in_pcs}&nbsp;CTN</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td class="border-right" colspan="2">&nbsp;</td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td class="border-right" colspan="2"><u>SHIPPING MARK</u></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>DEBENHAMS RETAIL LTD.</td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>DC NAME &amp; NO.</td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>SUPPLIER NO.: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>PRODUCT DESCRIPTION: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>PURCHASE ORDER NO: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>STYLE NO.</td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>DEPARTMENT NO.</td>
+            <td class="border-right"></td>
+            <td class="w-50 center">Authorized Signature</td>
+         </tr>
+         <tr>
+            <td>COLOUR CODE NO.</td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>TOTAL CTN: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td class="border-right" colspan="2"><u><b>SIDE MARKS</b></u></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>NET WEIGHT.: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td>GROSS WEIGHT.: </td>
+            <td class="border-right"></td>
+            <td class="w-50"></td>
+         </tr>
+         <tr>
+            <td class="border-right" colspan="2">&nbsp;</td>
+            <td class="w-50"></td>
+         </tr>
+      </tbody>
+   </table>
+</div>
